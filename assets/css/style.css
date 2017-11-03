@@ -1,56 +1,3 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
- html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-HTML5 display-role reset for older browsers
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-
-* {
-  box-sizing: border-box;
-  text-align: center;
-} 
-/* INSTRUCTOR: Here is the filled out version of the float activity */
 /* body{
   margin: 0px;
   padding: 0px;  
@@ -105,9 +52,10 @@ display:inline-block;
 }
 
 img {
-width:200px;
+   width:200px; 
   padding:10px;
 }
+
 .aboutMe {
   background-color:#ffffff;
   float: left;
@@ -126,16 +74,11 @@ margin-left:100px;
   padding:10px 30px ;
   border-bottom: 2px solid gray;
 }
-#ports {
-	width:40%;
-  	float:left;
-  	margin: 1.66%;
-}
 
 side bar
 
 #connectWithMe {
-	display:inline-block;
+  display:inline-block;
   float:right;
   margin-top:100px;
 margin-left:50px;
@@ -174,10 +117,7 @@ footer{
   text-align:center;
 color:#777777;
 } */
-
-/*11/2/20017 last good css*/
-
-/* body{
+body{
   margin: 0px;
   padding: 0px;  
   color:#777777;
@@ -191,14 +131,17 @@ color:#777777;
   left: 0;
   position: fixed;
   right: 0;
+  position:absolute;
+ 
 }
 
 #name {
   float:left;
   background-color:#4aaaa5;
-  margin-left:270px;
+  margin-left:200px;
   padding: 5px;
   font-family: 'Georgia', Times, Times New Roman, serif;
+  /*position:absolute;*/
 }
 
  h1 {
@@ -208,7 +151,7 @@ color:#ffffff
 #menu {
   float:right;
   display:inline-block;
-  margin:20px 270px 40px 100px; 
+  margin:30px 200px 40px 100px; 
 }
 
 a {  
@@ -217,22 +160,19 @@ a {
   font-family: 'Georgia', Times, Times New Roman, serif;
 }
 
-main content
+/*main content*/
 
 #mainContent {
   width:960px;
   margin:auto;
-float:left;
-display:inline-block;
 }
 
 #proPic{
-  color:#777777;
+width:200px;
+float:left;
 }
 
 #ports {
-width:200px;
-padding:10px;
   width:40%;
   float:left;
   margin: 1.66%;
@@ -241,47 +181,74 @@ padding:10px;
   background-color:#ffffff;
   float: left;
   width: 650px;
-display: inline-block;
   margin-top:100px;
-margin-left:50px;
-font-family: 'Georgia', Times, Times New Roman, serif;
 }
+
+#portfolioInfo {
+  position:relative;
+  left:30px;
+  padding-top:15px;
+  padding-bottom:30px;
+  
+/*   margin-left:50px; */
+/*   font-family: 'Georgia', Times, Times New Roman, serif; */
+}
+p {
+  float:left;
+  width:400px;
+  
+}
+
 h3 {
+  font-size:30px;
   background-color:#ffffff;
-width:650px;
   color:#4aaaa5;
   font-family: 'Georgia', Times, Times New Roman, serif;
-margin-left:100px;
-  padding:10px 30px ;
+  padding:10px ;
   border-bottom: 2px solid gray;
+  width:600px;
+  margin:auto;
 }
 
-side bar
+/*#text{
+  float:left;
+}*/
+
+/* side bar */
 
 #contactMe {
-	display:inline-block;
+  display:inline-block;
   float:right;
   margin-top:100px;
-margin-left:50px;
+/*   margin-left:50px; */
   margin-bottom:100px;
   background-color:#ffffff;
-top-margin:100px;
-left-margin:20px;
-margin-left:720px;
+  padding:10px;
+
+
+/*   top-margin:100px; */
+/*   left-margin:20px; */
+/*   margin-left:720px; */
 }
 
 h4 {
   background-color:#ffffff;
-  width:270px;
-float:right;
+  width:235px;
   color:#4aaaa5;
   font-family: 'Georgia', Times, Times New Roman, serif;
-  border-bottom: 2px solid gray;
+  border-bottom: 1px solid gray;
+  margin:auto;
+  padding:5px;
+  text-align:center;
+  font-size: 20px;
 }
 #links {
-float:right;
+  position:relative;
+  left:30px;
+  padding-top:15px;
+  padding-bottom:30px;
 }
-footer
+/* footer */
 h5 {
   color:#777777;
 }
@@ -293,8 +260,8 @@ footer{
   background: #666666;
   bottom: 0;
   left: 0;
-  position: fixed; */
-  /* right: 0;
-  text-align:center; */
+  position: fixed;
+  right: 0;
+  text-align:center;
 /*   color:#777777; */
-/*}*/
+}
